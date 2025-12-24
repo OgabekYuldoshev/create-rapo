@@ -1,0 +1,35 @@
+{
+	"author": "",
+	"bin": {
+		"create-rapo": "dist/index.js"
+	},
+	"dependencies": {
+		"@clack/prompts": "^0.11.0",
+		"minimist": "^1.2.8"
+	},
+	"description": "",
+	"devDependencies": {
+		"@biomejs/biome": "2.3.10",
+		"@types/minimist": "^1.2.5",
+		"@types/node": "^25.0.3",
+		"tsup": "^8.5.1",
+		"tsx": "^4.21.0",
+		"typescript": "^5.9.3"
+	},
+	"keywords": [],
+	"license": "ISC",
+	"main": "index.js",
+	"name": "create-rapo",
+	"packageManager": "pnpm@10.25.0",
+	"scripts": {
+		"build": "tsup src/index.ts",
+		"lint": "biome check .",
+		"preinstall": "npx only-allow pnpm",
+		"start": "tsx src/index.ts"
+	},
+	"type": "module",
+	"version": "0.0.1",
+	"volta": {
+		"node": "24.12.0"
+	}
+}
