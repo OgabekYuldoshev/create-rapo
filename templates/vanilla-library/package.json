@@ -2,13 +2,13 @@
   "name": "vanilla-library",
   "version": "1.0.0",
   "description": "<DESCRIPTION>",
-  "main": "dist/main.cjs",
+  "main": "dist/main.js",
   "type": "module",
   "exports": {
     ".": {
-      "import": "./dist/main.mjs",
-      "require": "./dist/main.js",
-      "types": "./dist/main.d.ts"
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.js",
+      "require": "./dist/main.cjs"
     }
   },
   "files": [

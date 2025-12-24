@@ -1,1 +1,1 @@
-Hello this is library
+A vanilla TypeScript library template.
