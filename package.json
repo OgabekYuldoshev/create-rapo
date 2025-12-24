@@ -5,6 +5,8 @@
 	"type": "module",
 	"main": "dist/index.js",
 	"bin": {
+		"create-adl-starter": "dist/index.js",
+		"adl-starter": "dist/index.js",
 		"create-rapo": "dist/index.js",
 		"rapo": "dist/index.js"
 	},
@@ -15,6 +17,9 @@
 	],
 	"keywords": [
 		"create-rapo",
+		"create-adl-starter",
+		"adl-starter",
+		"rapo",
 		"cli",
 		"scaffold",
 		"template",
