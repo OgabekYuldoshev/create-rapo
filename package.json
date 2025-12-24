@@ -35,7 +35,7 @@
 		"release": "standard-version",
 		"dev": "tsx src/index.ts",
 		"build": "tsup src/index.ts",
-		"lint": "biome check .",
+		"lint": "biome check --write .",
 		"prepublishOnly": "pnpm build"
 	},
 	"engines": {

@@ -1,0 +1,47 @@
+{
+  "name": "vanilla-library",
+  "version": "1.0.0",
+  "description": "<DESCRIPTION>",
+  "main": "dist/main.cjs",
+  "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/main.mjs",
+      "require": "./dist/main.js",
+      "types": "./dist/main.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "<REPO_URL>"
+  },
+  "bugs": {
+    "url": "<REPO_URL>/issues"
+  },
+  "homepage": "<REPO_URL>#readme",
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "release": "standard-version",
+    "build": "tsup src/main.ts",
+    "dev": "tsx src/main.ts",
+    "lint": "biome check --write ."
+  },
+  "keywords": [
+    "<KEYWORDS>"
+  ],
+  "author": "<AUTHOR>",
+  "license": "ISC",
+  "packageManager": "pnpm@10.25.0",
+  "devDependencies": {
+    "@biomejs/biome": "2.3.10",
+    "@types/node": "^25.0.3",
+    "standard-version": "^9.5.0",
+    "tsup": "^8.5.1",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3"
+  }
+}

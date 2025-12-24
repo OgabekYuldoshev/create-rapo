@@ -1,0 +1,81 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": {
+					"level": "on",
+					"options": {
+						"groups": [
+							"**",
+							[":NODE:", ":BUN:"],
+							"@*",
+							":PACKAGE:",
+							":BLANK_LINE:",
+							"@/**",
+							":BLANK_LINE:",
+							":PATH:"
+						]
+					}
+				},
+				"useSortedAttributes": "on",
+				"useSortedProperties": "on"
+			}
+		},
+		"enabled": true
+	},
+	"files": {
+		"ignoreUnknown": false,
+		"includes": ["**", "!node_modules", "!dist", "!build", "!templates", "src"]
+	},
+	"formatter": {
+		"enabled": true,
+		"indentStyle": "tab"
+	},
+	"javascript": {
+		"formatter": {
+			"indentWidth": 2,
+			"lineWidth": 120,
+			"quoteStyle": "double"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"complexity": {
+				"noForEach": "error"
+			},
+			"performance": {
+				"noReExportAll": "error"
+			},
+			"recommended": true,
+			"style": {
+				"noEnum": "error",
+				"noExportedImports": "error",
+				"noMagicNumbers": "error",
+				"noNamespace": "error",
+				"noNestedTernary": "error",
+				"useDefaultSwitchClause": "error",
+				"useExportsLast": "error",
+				"useFilenamingConvention": {
+					"level": "error",
+					"options": {
+						"filenameCases": ["kebab-case"]
+					}
+				},
+				"useNumericSeparators": "error",
+				"useReactFunctionComponents": "error"
+			},
+			"suspicious": {
+				"noAlert": "error",
+				"noVar": "error",
+				"useAwait": "error"
+			}
+		}
+	},
+	"vcs": {
+		"clientKind": "git",
+		"enabled": true,
+		"useIgnoreFile": true
+	}
+}
