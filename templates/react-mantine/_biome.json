@@ -9,6 +9,15 @@
 						"groups": [
 							"**",
 							[":NODE:", ":BUN:"],
+							[
+								"react",
+								"react/**",
+								"react-*",
+								"react-dom",
+								"react-dom/**",
+								"react/jsx-runtime",
+								"react/jsx-dev-runtime"
+							],
 							"@*",
 							":PACKAGE:",
 							":BLANK_LINE:",
@@ -26,7 +35,7 @@
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["**", "!node_modules", "!dist", "!build", "!templates", "src"]
+		"includes": ["**", "!node_modules", "!dist", "!build", "src"]
 	},
 	"formatter": {
 		"enabled": true,

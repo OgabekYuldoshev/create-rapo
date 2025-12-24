@@ -1,13 +1,51 @@
 {
-	"author": "",
+	"name": "create-rapo",
+	"version": "0.0.1",
+	"description": "A CLI tool to quickly scaffold React projects with pre-configured templates",
+	"type": "module",
+	"main": "dist/index.js",
 	"bin": {
-		"create-rapo": "dist/index.js"
+		"create-rapo": "dist/index.js",
+		"rapo": "dist/index.js"
+	},
+	"files": [
+		"dist",
+		"templates",
+		"README.md"
+	],
+	"keywords": [
+		"create-rapo",
+		"cli",
+		"scaffold",
+		"template",
+		"boilerplate",
+		"generator"
+	],
+	"author": "Ogabek Yuldoshev",
+	"license": "ISC",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/OgabekYuldoshev/create-rapo.git"
+	},
+	"bugs": {
+		"url": "https://github.com/OgabekYuldoshev/create-rapo/issues"
+	},
+	"homepage": "https://github.com/OgabekYuldoshev/create-rapo#readme",
+	"scripts": {
+		"preinstall": "npx only-allow pnpm",
+		"dev": "tsx src/index.ts",
+		"build": "tsup src/index.ts",
+		"lint": "biome check .",
+		"prepublishOnly": "pnpm build"
+	},
+	"engines": {
+		"node": ">=18.0.0"
 	},
 	"dependencies": {
 		"@clack/prompts": "^0.11.0",
+		"chalk": "^5.6.2",
 		"minimist": "^1.2.8"
 	},
-	"description": "",
 	"devDependencies": {
 		"@biomejs/biome": "2.3.10",
 		"@types/minimist": "^1.2.5",
@@ -16,19 +54,7 @@
 		"tsx": "^4.21.0",
 		"typescript": "^5.9.3"
 	},
-	"keywords": [],
-	"license": "ISC",
-	"main": "index.js",
-	"name": "create-rapo",
 	"packageManager": "pnpm@10.25.0",
-	"scripts": {
-		"build": "tsup src/index.ts",
-		"lint": "biome check .",
-		"preinstall": "npx only-allow pnpm",
-		"start": "tsx src/index.ts"
-	},
-	"type": "module",
-	"version": "0.0.1",
 	"volta": {
 		"node": "24.12.0"
 	}
