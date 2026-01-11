@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.12](https://github.com/OgabekYuldoshev/create-rapo/compare/v0.0.4...v0.0.12) (2026-01-11)
+
+
+### Bug Fixes
+
+* update getTemplateDirectory function to correctly resolve template paths based on build directory structure ([df342af](https://github.com/OgabekYuldoshev/create-rapo/commit/df342afaac686dded8cc7a7f40a741363656d6ad))
+
 ### [0.0.11](https://github.com/OgabekYuldoshev/create-rapo/compare/v0.0.10...v0.0.11) (2025-12-24)
 
 ### [0.0.10](https://github.com/OgabekYuldoshev/create-rapo/compare/v0.0.9...v0.0.10) (2025-12-24)
