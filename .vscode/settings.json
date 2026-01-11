@@ -1,8 +1,6 @@
 {
 	"editor.codeActionsOnSave": {
 		"source.action.organizeImports.biome": "explicit",
-		"source.action.useSortedAttributes.biome": "explicit",
-		"source.action.useSortedProperties.biome": "explicit",
 		"source.fixAll.biome": "explicit"
 	}
 }

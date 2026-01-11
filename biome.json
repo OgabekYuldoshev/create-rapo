@@ -17,16 +17,14 @@
 							":PATH:"
 						]
 					}
-				},
-				"useSortedAttributes": "on",
-				"useSortedProperties": "on"
+				}
 			}
 		},
 		"enabled": true
 	},
 	"files": {
 		"ignoreUnknown": false,
-		"includes": ["**", "!node_modules", "!dist", "!build", "!templates", "src"]
+		"includes": ["**", "!templates"]
 	},
 	"formatter": {
 		"enabled": true,
