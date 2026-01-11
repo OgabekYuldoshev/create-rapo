@@ -8,7 +8,10 @@
 					"options": {
 						"groups": [
 							"**",
-							[":NODE:", ":BUN:"],
+							[
+								":NODE:",
+								":BUN:"
+							],
 							[
 								"react",
 								"react/**",
@@ -26,16 +29,18 @@
 							":PATH:"
 						]
 					}
-				},
-				"useSortedAttributes": "on",
-				"useSortedProperties": "on"
+				}
 			}
 		},
 		"enabled": true
 	},
 	"files": {
-		"ignoreUnknown": false,
-		"includes": ["**", "!node_modules", "!dist", "!build", "src"]
+		"ignoreUnknown": true,
+		"includes": [
+			"**/*.{ts,tsx,js,jsx,json,css,scss,md}",
+			"!vite.config.*",
+			"!tsup.config.*"
+		]
 	},
 	"formatter": {
 		"enabled": true,
@@ -43,7 +48,6 @@
 	},
 	"javascript": {
 		"formatter": {
-			"indentWidth": 2,
 			"lineWidth": 120,
 			"quoteStyle": "double"
 		}
@@ -69,11 +73,14 @@
 				"useFilenamingConvention": {
 					"level": "error",
 					"options": {
-						"filenameCases": ["kebab-case"]
+						"filenameCases": [
+							"kebab-case"
+						]
 					}
 				},
 				"useNumericSeparators": "error",
-				"useReactFunctionComponents": "error"
+				"useReactFunctionComponents": "error",
+				"noDefaultExport": "error"
 			},
 			"suspicious": {
 				"noAlert": "error",

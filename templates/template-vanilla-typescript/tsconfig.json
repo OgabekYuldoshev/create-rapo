@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"allowJs": true,
+
+		"esModuleInterop": true,
+		"isolatedModules": true,
+
+		"lib": ["es2022"],
+
+		"module": "preserve",
+		"moduleDetection": "force",
+		"noImplicitOverride": true,
+		"noUncheckedIndexedAccess": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+
+		"strict": true,
+		"target": "es2022",
+		"verbatimModuleSyntax": true,
+		
+		"outDir": "dist",
+	},
+	"exclude": ["node_modules", "dist"],
+	"include": ["src/**/*.ts"]
+}

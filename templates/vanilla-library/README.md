@@ -1,1 +1,0 @@
-A vanilla TypeScript library template.

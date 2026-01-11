@@ -9,6 +9,15 @@
 						"groups": [
 							"**",
 							[":NODE:", ":BUN:"],
+							[
+								"react",
+								"react/**",
+								"react-*",
+								"react-dom",
+								"react-dom/**",
+								"react/jsx-runtime",
+								"react/jsx-dev-runtime"
+							],
 							"@*",
 							":PACKAGE:",
 							":BLANK_LINE:",
@@ -17,16 +26,14 @@
 							":PATH:"
 						]
 					}
-				},
-				"useSortedAttributes": "on",
-				"useSortedProperties": "on"
+				}
 			}
 		},
 		"enabled": true
 	},
 	"files": {
-		"ignoreUnknown": false,
-		"includes": ["**", "!node_modules", "!dist", "!build", "!templates", "src"]
+		"ignoreUnknown": true,
+		"includes": ["**/*.{ts,tsx,js,jsx,json,css,scss,md}", "!vite.config.*"]
 	},
 	"formatter": {
 		"enabled": true,
@@ -34,13 +41,15 @@
 	},
 	"javascript": {
 		"formatter": {
-			"indentWidth": 2,
 			"lineWidth": 120,
 			"quoteStyle": "double"
 		}
 	},
 	"linter": {
 		"enabled": true,
+		"domains": {
+			"react": "recommended"
+		},
 		"rules": {
 			"complexity": {
 				"noForEach": "error"
@@ -64,7 +73,8 @@
 					}
 				},
 				"useNumericSeparators": "error",
-				"useReactFunctionComponents": "error"
+				"useReactFunctionComponents": "error",
+				"noDefaultExport": "error"
 			},
 			"suspicious": {
 				"noAlert": "error",

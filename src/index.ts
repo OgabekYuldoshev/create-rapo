@@ -26,8 +26,12 @@ const AVAILABLE_TEMPLATES: Template[] = [
 		value: "vanilla",
 		children: [
 			{
-				label: "Basic library template",
-				value: "vanilla-library",
+				label: "Vanilla Typescript",
+				value: "template-vanilla-typescript",
+			},
+			{
+				label: "Vanilla Typescript Library",
+				value: "template-vanilla-typescript-library",
 			},
 		],
 	},
@@ -36,8 +40,8 @@ const AVAILABLE_TEMPLATES: Template[] = [
 		value: "react",
 		children: [
 			{
-				label: "Basic template with Mantine UI",
-				value: "react-basic-mantine",
+				label: "React + Mantine UI",
+				value: "template-react-mantine",
 			},
 		],
 	},
@@ -145,11 +149,9 @@ async function promptOverwriteDirectory(directoryPath: string): Promise<boolean>
 function getTemplateDirectory(templateName: string): string {
 	const currentFileUrl = fileURLToPath(import.meta.url);
 	const distDir = path.dirname(currentFileUrl);
-	
-	const packageRoot = distDir.endsWith('dist') 
-		? path.resolve(distDir, '..')
-		: path.resolve(distDir, '..');
-	
+
+	const packageRoot = distDir.endsWith("dist") ? path.resolve(distDir, "..") : path.resolve(distDir, "..");
+
 	return path.join(packageRoot, TEMPLATES_DIRECTORY, templateName);
 }
 
