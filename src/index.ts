@@ -144,7 +144,13 @@ async function promptOverwriteDirectory(directoryPath: string): Promise<boolean>
 
 function getTemplateDirectory(templateName: string): string {
 	const currentFileUrl = fileURLToPath(import.meta.url);
-	return path.resolve(currentFileUrl, "../..", TEMPLATES_DIRECTORY, templateName);
+	const distDir = path.dirname(currentFileUrl);
+	
+	const packageRoot = distDir.endsWith('dist') 
+		? path.resolve(distDir, '..')
+		: path.resolve(distDir, '..');
+	
+	return path.join(packageRoot, TEMPLATES_DIRECTORY, templateName);
 }
 
 function updatePackageJson(projectPath: string, packageName: string): void {
