@@ -39,7 +39,7 @@
 		"dev": "tsx src/index.ts",
 		"build": "tsup src/index.ts",
 		"lint": "biome check --write .",
-		"prepublishOnly": "pnpm release && pnpm build"
+		"prepublishOnly": "pnpm build"
 	},
 	"engines": {
 		"node": ">=18.0.0"
