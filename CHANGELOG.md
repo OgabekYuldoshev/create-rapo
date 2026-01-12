@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.15](https://github.com/OgabekYuldoshev/create-rapo/compare/v0.0.14...v0.0.15) (2026-01-12)
+
+
+### Features
+
+* add new React + Mantine UI + Rspack and React + Vite + Mantine UI templates with necessary configurations and files ([16bc172](https://github.com/OgabekYuldoshev/create-rapo/commit/16bc17252c92ccb4a6fae24a15565ece496c4ca0))
+
 ### [0.0.14](https://github.com/OgabekYuldoshev/create-rapo/compare/v0.0.13...v0.0.14) (2026-01-11)
 
 ### [0.0.13](https://github.com/OgabekYuldoshev/create-rapo/compare/v0.0.12...v0.0.13) (2026-01-11)
