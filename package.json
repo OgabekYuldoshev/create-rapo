@@ -1,6 +1,6 @@
 {
 	"name": "create-rapo",
-	"version": "0.0.15",
+	"version": "0.0.16",
 	"description": "A CLI tool to quickly scaffold projects with pre-configured templates",
 	"type": "module",
 	"main": "dist/index.js",
