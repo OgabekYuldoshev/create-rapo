@@ -58,7 +58,6 @@
 			"style": {
 				"noEnum": "error",
 				"noExportedImports": "error",
-				"noMagicNumbers": "error",
 				"noNamespace": "error",
 				"noNestedTernary": "error",
 				"useDefaultSwitchClause": "error",
@@ -70,7 +69,6 @@
 					}
 				},
 				"useNumericSeparators": "error",
-				"useReactFunctionComponents": "error",
 				"noDefaultExport": "error"
 			},
 			"suspicious": {

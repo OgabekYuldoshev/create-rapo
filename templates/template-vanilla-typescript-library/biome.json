@@ -1,97 +1,90 @@
 {
-	"$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
-	"assist": {
-		"actions": {
-			"source": {
-				"organizeImports": {
-					"level": "on",
-					"options": {
-						"groups": [
-							"**",
-							[
-								":NODE:",
-								":BUN:"
-							],
-							[
-								"react",
-								"react/**",
-								"react-*",
-								"react-dom",
-								"react-dom/**",
-								"react/jsx-runtime",
-								"react/jsx-dev-runtime"
-							],
-							"@*",
-							":PACKAGE:",
-							":BLANK_LINE:",
-							"@/**",
-							":BLANK_LINE:",
-							":PATH:"
-						]
-					}
-				}
-			}
-		},
-		"enabled": true
-	},
-	"files": {
-		"ignoreUnknown": true,
-		"includes": [
-			"**/*.{ts,tsx,js,jsx,json,css,scss,md}",
-			"!vite.config.*",
-			"!tsup.config.*"
-		]
-	},
-	"formatter": {
-		"enabled": true,
-		"indentStyle": "tab"
-	},
-	"javascript": {
-		"formatter": {
-			"lineWidth": 120,
-			"quoteStyle": "double"
-		}
-	},
-	"linter": {
-		"enabled": true,
-		"rules": {
-			"complexity": {
-				"noForEach": "error"
-			},
-			"performance": {
-				"noReExportAll": "error"
-			},
-			"recommended": true,
-			"style": {
-				"noEnum": "error",
-				"noExportedImports": "error",
-				"noMagicNumbers": "error",
-				"noNamespace": "error",
-				"noNestedTernary": "error",
-				"useDefaultSwitchClause": "error",
-				"useExportsLast": "error",
-				"useFilenamingConvention": {
-					"level": "error",
-					"options": {
-						"filenameCases": [
-							"kebab-case"
-						]
-					}
-				},
-				"useNumericSeparators": "error",
-				"useReactFunctionComponents": "error",
-				"noDefaultExport": "error"
-			},
-			"suspicious": {
-				"noAlert": "error",
-				"noVar": "error",
-				"useAwait": "error"
-			}
-		}
-	},
-	"vcs": {
-		"clientKind": "git",
-		"enabled": true,
-		"useIgnoreFile": true
-	}
+  "$schema": "https://biomejs.dev/schemas/2.3.10/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              "**",
+              [":NODE:", ":BUN:"],
+              [
+                "react",
+                "react/**",
+                "react-*",
+                "react-dom",
+                "react-dom/**",
+                "react/jsx-runtime",
+                "react/jsx-dev-runtime"
+              ],
+              "@*",
+              ":PACKAGE:",
+              ":BLANK_LINE:",
+              "@/**",
+              ":BLANK_LINE:",
+              ":PATH:"
+            ]
+          }
+        }
+      }
+    },
+    "enabled": true
+  },
+  "files": {
+    "ignoreUnknown": true,
+    "includes": [
+      "**/*.{ts,tsx,js,jsx,json,css,scss,md}",
+      "!vite.config.*",
+      "!tsup.config.*"
+    ]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "tab"
+  },
+  "javascript": {
+    "formatter": {
+      "lineWidth": 120,
+      "quoteStyle": "double"
+    }
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "complexity": {
+        "noForEach": "error"
+      },
+      "performance": {
+        "noReExportAll": "error"
+      },
+      "recommended": true,
+      "style": {
+        "noEnum": "error",
+        "noExportedImports": "error",
+        "noNamespace": "error",
+        "noNestedTernary": "error",
+        "useDefaultSwitchClause": "error",
+        "useExportsLast": "error",
+        "useFilenamingConvention": {
+          "level": "error",
+          "options": {
+            "filenameCases": ["kebab-case"]
+          }
+        },
+        "useNumericSeparators": "error",
+        "noDefaultExport": "error"
+      },
+      "suspicious": {
+        "noAlert": "error",
+        "noVar": "error",
+        "useAwait": "error"
+      }
+    }
+  },
+  "vcs": {
+    "clientKind": "git",
+    "enabled": true,
+    "useIgnoreFile": true
+  }
 }
